@@ -1,0 +1,49 @@
+create table UserInfo
+(
+        
+	email text primary key,
+	name varchar(20) not null,
+	phone int8 not null,
+	addr text,
+	password varchar(12),
+    mark varchar(10) not null
+);
+
+insert into UserInfo values
+(
+	'root23@gmail.com',
+	'root',
+	9516750048,
+	'Sagar',
+	'root',
+    'User'
+);
+create table item
+(
+    ImagePath text,
+	itemName varchar(50) not null,
+    price int8 not null,
+    itemid int8 not null unique,
+	features text,
+	quantity int
+);
+create table cart
+(
+	email text not null,
+	itemId int8,
+	foreign key(email) references UserInfo(email),
+	foreign key(itemId) references item(itemid)
+);
+insert into item values
+(
+	'C:\Users\dell\OneDrive\Desktop\Challenge\Website\src\main\webapp\kurta.jpeg',
+	'kurta',
+	450,
+	100,
+	'Accha Kapda hai le lo '
+);
+
+/*Important Query*/
+select name,itemname,imagepath,price,features from userinfo,cart,item where userinfo.email=cart.email and item.itemid=cart.itemid and cart.email='root23@gmail.com';
+select sum(price) as income from userinfo,cart,item where userinfo.email=cart.email and item.itemid=cart.itemid and cart.email='root23@gmail.com';
+

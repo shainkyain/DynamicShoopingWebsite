@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .hg :hover {
+      box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 75);
+      -moz-box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 75);
+      -webkit-box-shadow: -2px -1px 25px -4px rgba(0, 0, 20, 75);
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(109, 177, 154);">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="row">
+      <div class="col">
+        <div class="navbar-brand">
+          <img src="kurta3.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Welcome to Login Page
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="comment py-5">
+    <div class="container" style="background-color: rgb(108, 175, 147);">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+          <div id="ui">
+            <form class="form-group" action="adminAddItem">
+
+              <div class="row no-gutters">
+
+                <div class="col-lg-6">
+                  <label for="">Item Name *</label>
+                  <input type="text" name="Name" class="form-control" placeholder="Item Name">
+                </div>
+                <div class="col-lg-6">
+                  <label for="">Price *</label>
+                  <input type="number" name="price" class="form-control" placeholder="price">
+                </div>
+
+              </div>
+              <label class="mt-2" for="">Image Path *</label>
+              <input type="text" name="path" class="form-control" placeholder="Enter Image Path">
+
+              <div class="row no-gutters mt-3">
+
+                <div class="col-lg-6">
+                  <label for="">Item ID *</label>
+                  <input type="number" name="item_ID" class="form-control mt-2" placeholder="Unique">
+                </div>
+                <div class="col-lg-6">
+                  <label for="">Quantity *</label>
+                  <input type="number" name="quantity" class="form-control mt-2" placeholder="Quantity">
+                </div>
+              </div>
+              <label class="mt-3" for="">Features *</label>
+              <textarea name="feature" class="form-control" placeholder="Features" id="" cols="10" rows="5"></textarea>
+              <input type="submit" class="btn btn-primary button-block mt-3">
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col hg">
+        <p class="" style="color: rgb(39, 48, 39);">Mandatory Field Marked as * Filling that Section is Compulsory</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.alig
+{
+    text-align: end;
+}
+.main
+{
+    background: url(b.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.main h1
+{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img-fluid
+{
+    width: 70%;
+    height: 70%;
+}
+.img-fluid1
+{
+    height: 300px;
+    width: 300px;
+}
+h1
+{
+    font-weight: 700;
+}
+.btn
+{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: pink;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.btn:hover
+{
+    background-color: rgb(175, 29, 54);
+    transition: 0.5s;
+}
+.card:hover
+{
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,75);
+    -moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,75);
+    -webkit-box-shadow: -2px -1px 25px -4px rgba(0,0, 20, 75);
+}
+.festival
+{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(festival.jpg)no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+
+}
+.festival h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
